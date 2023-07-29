@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="game_head">
+        <h1>Connect 4 Game!</h1>
+        <form id="myForm">
+            <label for="width">Select Number of Columns: </label>
+            <input type="text" id="width" placeholder="7" required>
+            <label for="height">Select Number of Boxex Per Column </label>
+            <input type="text" id="height" placeholder="6" required>
+            <p>Only integer inputs will generate a game.</p>
+            <input id="button" type="submit" value="Start Game!">
+        </form>
+        <button id="button_reset">Reset Game!</button>
+    </section>
+    <script src="game.js"></script>
+  </body>
+</html>

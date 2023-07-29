@@ -1,0 +1,126 @@
+
+body {
+    background: #ecf4fb82;
+    }
+  
+.game_head {
+position: relative;
+top: 20px;
+width: 85%;
+border-radius: 5px;
+background-color: #f2f2f2;
+text-align: center;
+margin: auto;
+font-weight: bold;
+}
+
+.game_head h1 {
+font-size: xx-large;
+text-align: center;
+padding: 20px;
+}
+
+.game_head p {
+text-align: center;
+font-size: large;
+padding: 20px;
+color: #377b3a;
+}
+
+input[type=text]{
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+
+input[type=submit] {
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+input::placeholder{
+    text-align: center;
+    color: #377b3a;
+    }
+
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+#button_reset {
+    background-color: #87261f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+
+.board {
+position: relative;
+top: 20px;
+padding-top: 20px;
+width: 85%;
+border-radius: 5px;
+background-color: #f2f2f2;
+text-align: center;
+margin: auto;
+font-weight: bold;
+}
+
+.square_head {
+    height:50px;
+    width: 50px;
+    border-style: dotted;
+    margin-bottom: 3px;
+
+}
+
+.square_head:hover {
+    background-color: rgb(247, 199, 9);
+
+}
+
+.columns {
+    display: inline-block;
+}
+
+.squares {
+    height:50px;
+    width: 50px;
+    border-style: solid;
+    margin-bottom: 3px;
+    margin-right: 2px;
+    position: relative;
+}
+
+.dot_red {
+height: 40px;
+width: 40px;
+background-color: red;
+border-radius: 50%;
+position: absolute;
+left: 5px;
+top: 5px;
+}
+
+.dot_blue {
+height: 40px;
+width: 40px;
+background-color: blue;
+border-radius: 50%;
+position: absolute;
+left: 5px;
+top: 5px;
+}
