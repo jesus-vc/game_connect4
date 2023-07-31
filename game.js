@@ -61,7 +61,13 @@ const buildArray = (columns, elements) => {
   grid = Array.from({ length: columns }, () => Array(elements).fill(null));
 };
 
-//Calculate a match after every user selection.
+// match() function calculates a match after every user selection.
+// Logic:
+// Every dot on a Connect 4 board has 16 potential winning combinations.
+// So every dot dropped by a user is evaluted only for these 16 potential combinations,
+// rather than evaluating the entire board for a winning combination.
+// Each of the for-loops below is calculated one at a time, also to short-curcuit a win.
+
 const match = (column, index, player) => {
   let arr1 = [];
 
